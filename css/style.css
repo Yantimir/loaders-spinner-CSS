@@ -1,0 +1,84 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.spinner {
+	display: inline-block;
+	margin: 150px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	animation: spin 1.2s linear infinite;
+}
+
+.spinner--gray {
+	border: 5px solid rgb(180, 180, 180);
+	border-left-color: #444444;
+}
+
+.spinner--red {
+	width: 70px;
+	height: 70px;
+	border: 5px solid rgb(247, 157, 157);
+	border-left-color: #ee3e3e;
+}
+
+.spinner--green {
+	width: 100px;
+	height: 100px;
+	border: 5px solid rgb(168, 238, 185);
+	border-left-color: #15c960;
+}
+
+.spinner--blue {
+	width: 200px;
+	height: 200px;
+	border: 10px solid rgb(168, 206, 238);
+	border-left-color: #1587c9;
+}
+
+
+@keyframes spin {
+	0% {
+		transition: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
